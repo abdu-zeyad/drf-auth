@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Posts
+from .models import Employee
 
 
-class PostSerializer(serializers.ModelSerializer):
+class Employeeserializer(serializers.ModelSerializer):
     class Meta:
         fields = ("id", "author", "title", "body", "created_at")
-        model = Posts
+        model = Employee
